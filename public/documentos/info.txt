@@ -1,0 +1,21 @@
+use crud-dma;
+
+db.personas.insert({
+    "paterno":"Martinez",
+    "materno":"Andrade",
+    "nombre":"Diana",
+    "fecha":"11-06-2002"
+});
+
+db.createUser({
+    user:"mongoadmin",
+    pwd:"134340",
+    roles:[
+        {
+            role: "readWrite",
+            db: "crud-dma"
+        }
+    ]
+})
+
+    mongo -u mongoadmin -p 134340 --authenticationDatabase crud-dma
