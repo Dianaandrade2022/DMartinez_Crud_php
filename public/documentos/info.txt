@@ -18,4 +18,4 @@ db.createUser({
     ]
 })
 
-    mongo -u mongoadmin -p 134340 --authenticationDatabase crud-dma
+    mongosh -u mongoadmin -p 134340 --authenticationDatabase crud-dma

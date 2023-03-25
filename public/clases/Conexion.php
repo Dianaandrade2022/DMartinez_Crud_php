@@ -1,7 +1,7 @@
 <?php
 require_once $_SERVER['DOCUMENT_ROOT'] . '/DMartínez_Crud_PHP_Mongo/vendor/autoload.php';
 class Conexion{
-    public function conectar(){
+    public function conectar (){
         try {
         $servidor = "127.0.0.1";
         $usuario = "mongoadmin";
